@@ -2,6 +2,7 @@
 
 .open "code_orig.bin","code.bin",0x100000
 
+texFile__TryRead equ 0x4e0be4
 
 .org 0x1512E0
 drawUnique:
