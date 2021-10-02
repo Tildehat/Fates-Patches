@@ -3,7 +3,7 @@
 .open "code_orig.bin","code.bin",0x100000
 .loadtable "unicode.tbl"
 
-.org 0x1512E0
+.org 0x151310
 SaveFileNamePoinTable:
 .word 0x6b086a, 0x6b08a4, 0x6b08de, 0x6b096c, 0x6b09ac, 0x6b09d0, 0x6b09f4, 0x6b0a18, 0x6b0a3c, Slot10, Slot11, Slot12, Slot13, Slot14, Slot15, Slot16, Slot17, Slot18, Slot19, Slot20, Slot21, Slot22, Slot23, Slot24,  Slot25, Slot26, Slot27, Slot28, Slot29, Slot30,Slot31, Slot32, Slot33, Slot34,  Slot35, Slot36, Slot37, Slot38, Slot39
 

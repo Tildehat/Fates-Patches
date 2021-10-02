@@ -23,3 +23,5 @@ drawUnique:
 	
 .org 0x1d6fd0
 	b drawUnique
+	
+.close
