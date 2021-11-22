@@ -86,4 +86,25 @@ Slot39:
 .org 0x214aac
 	mov	r2,#0x4000
 	
+;fix chapter file load
+
+.org 0x1d8790
+	b LoopSavePage
+
+.org 0x1d86c8
+	cmp r0,#0
+	beq 0x1d8734
+	ldr r2,[r1,#8]
+	mov r5,#0 ; counter
+	mov r6,r0 ; page number
+	b 0x1d8738 ; turn page if not at first
+LoopSavePage:
+	ldr r1,=0x6d820c
+	add r5,r5,#1
+	cmp r5,r6
+	blt 0x1d8738
+	pop {r4-r8,pc}
+
+.pool
+	
 .Close
