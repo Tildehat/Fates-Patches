@@ -15,3 +15,6 @@
 
 ## patchControlEnemy
  Allows taking over enemies and NPC for control on their turns
+ 
+ ## patchDisablePrepPairUp
+ Disables the ablility to pair up on the preperations screen by using ev::ChapterSetHideDouble(1) in the opening events. (Remember to use ev::ChapterSetHideDouble(0) to turn pair up back on during the map).
