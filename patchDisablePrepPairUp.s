@@ -2,7 +2,7 @@
 
 .open "code_orig.bin","code.bin",0x100000
 
-.org 0x151820
+.org 0x15130c
 RemovePairUp:
 	ldr r0,=0x6d7ed0
 	ldr r0,[r0]
